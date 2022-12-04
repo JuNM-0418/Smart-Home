@@ -1,0 +1,34 @@
+{
+    "kind": "youtube#searchResult",
+    "etag": "JLJqcR6Y5KjUMtA7Hi_8ymqUN3c",
+    "id": {
+        "kind": "youtube#video",
+        "videoId": "VaPccT-bjgs"
+    },
+    "snippet": {
+        "publishedAt": "2022-12-01T00: 06: 42Z",
+        "channelId": "UCBnMxlW70f0SB4ZTJx124lw",
+        "title": "🥤Cafe &amp; Relaxing Jazz Piano Background Music for study, work, focus l 카페재즈, 매장음악, 라운지재즈",
+        "description": "저희 음악이 마음에 드신다면 구독과 좋아요 부탁드려요! - Please Subscribe!",
+        "thumbnails": {
+            "default": {
+                "url": "https: //i.ytimg.com/vi/VaPccT-bjgs/default_live.jpg",
+                "width": 120,
+                "height": 90
+            },
+            "medium": {
+                "url": "https://i.ytimg.com/vi/VaPccT-bjgs/mqdefault_live.jpg",
+                "width": 320,
+                "height": 180
+            },
+            "high": {
+                "url": "https://i.ytimg.com/vi/VaPccT-bjgs/hqdefault_live.jpg",
+                "width": 480,
+                "height": 360
+            }
+        },
+        "channelTitle": "몽키비지엠 MONKEYBGM",
+        "liveBroadcastContent": "live",
+        "publishTime": "2022-12-01T00:06:42Z"
+    }
+}
