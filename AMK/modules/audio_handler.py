@@ -21,11 +21,12 @@ class TTS:
         return thr
 
 class STT(sr.Recognizer):
-    def __init__(self, timeout=10, phase=10, lang: str = "ko-KR"):
+    def __init__(self, timeout=7, phrase=7,lang: str = "ko-KR"):
+    
         self.lang = lang
         super().__init__()
 
-    def get_text(self, timeout=10, phrase=10):
+    def get_text(self, timeout=7, phrase=7):
         try:
             with sr.Microphone() as source:
                 audio = self.listen(source, timeout=timeout,
@@ -38,9 +39,21 @@ class STT(sr.Recognizer):
         return None
 
 if __name__ == "__main__":
-    from datetime import datetime
+    # from datetime import datetime
+    import datetime
     stt = STT()
     tts = TTS()
             
-    now = datetime.now().strftime("%Y년 %m월 %d일")
-    tts.direct_tts(f"안녕하세요. 테스트입니다. 현재 시간은 {now} 입니다.")
+    # now = datetime.datetime.now().strftime("%Y년 %m월 %d일")
+    now = datetime.datetime.now().strftime("%H시 %M분")
+    after = datetime.datetime.now() + datetime.timedelta(minutes=20)
+    alarm = after.strftime("%H시 %M분")
+
+    print(now)
+    print(alarm)
+    
+
+    tts.direct_tts(f"현재 시간은 {now} 입니다.")
+    tts.direct_tts(f"알람 시간은 {alarm} 입니다.")
+
+
